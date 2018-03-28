@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Asteroids</title>
+<!-- ************************FAVICONS************************ -->
+<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+<!--[if IE]><link rel="shortcut icon" href="res/favicon.ico"><![endif]-->
+
+<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+<link rel="apple-touch-icon-precomposed" href="res/apple-touch-icon-precomposed.png">
+
+<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+<link rel="icon" href="res/favicon.png">
+<!-- ******************************************************** -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- *********STYLE (CSS)********* -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_purple.min.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+
+<link rel="stylesheet" type="text/css" href="css/stars.css"></link>
+<!--https://codepen.io/Glucio/pen/BoLWPo-->
+
+
+<!-- *********SCRIPTS(JS)********* -->
+<script type="application/javascript" src="js/script.js"></script>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+
+
+<body>
+  <audio preload="auto" id="startSound">
+   <source src="media/intro.mp3" type="audio/mpeg">
+ Your browser does not support the audio element.
+ </audio>
+ <audio preload="auto" id="endSound">
+  <source src="media/death.mp3" type="audio/mpeg">
+ </audio>
+ <audio preload="auto" id="pew">
+  <source src="media/shoot.mp3" type="audio/mpeg">
+ </audio>
+ <audio preload="auto" id="reactor">
+  <source src="media/reactor.mp3" type="audio/mpeg">
+ </audio>
+ <audio preload="auto" id="explosion">
+  <source src="media/explosion.mp3" type="audio/mpeg">
+ </audio>
+
+
+
+<header>
+<!--<h1>Asteroid Game</h1>-->
+</header>
+
+<a href="index.html"><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="back" style="color:white">
+  <i class="material-icons">arrow_back</i>
+</button></a>
+
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div>
+<!--<canvas id="fondo"  width="600" height="300"style="border:1px solid red;"> (descomentar para ver bordes del canvas)-->
+<canvas id="fondo"  width="600" height="300">
+Explorador no compatible con Canvas HTML5
+</canvas>
+</div>
+
+
+<a href="javascript:muteGame();">
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="mute">
+  <i class="material-icons" id="speaker">volume_off</i>
+</button>
+</a>
+
+
+<footer>
+<nav>
+<a href="game.html">Jugar</a>
+<a href="description.html">Descripción</a>
+<a href="authors.html">Autores</a>
+<a href="development.html">Desarrollo</a>
+<a href="references.html">Referencias</a>
+</nav>
+</footer>
+
+</body>
+</html>
